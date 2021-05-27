@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <title>PDF Upload </title>
+    <hr>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  </head>
+  <body >
+    <div style="padding: 50px">
+    <h1>Upload your PDF file with one question per page. </h1>
+    <form method="POST" action="/file-upload" enctype="multipart/form-data">
+      <p><input type="file" name="file"></p>
+      <div>
+        <label> Enter number of groups:</label>
+        <p><input type="number"  name="num_groups"  placeholder="5"> </p>
+      </div>
+
+      <div>
+        <label> Enter number of questions:</label>
+        <p><input type="number" name="num_pages" > </p>
+      </div>
+     
+      <p><input type="submit" value="Generate Random PDFs"></p>
+    </form>
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+  </body>
+</html>
+

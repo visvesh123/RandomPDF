@@ -7,14 +7,14 @@ from string import ascii_uppercase
 import string
 import shutil
 
-
+absPath = "/Users/visveshnaraharisetty/Desktop/RandomPdfGenerator"
 def ranString(length = 10):
     res = ''.join(r.choices(string.ascii_uppercase + string.digits, k = length)) 
     return res
 
 def createFolder():
     name = ranString()
-    os.system("mkdir /Users/visveshnaraharisetty/Desktop/RandomPdfGenerator/src/uploads/folder%s"%name) 
+    os.system("mkdir " + absPath +  "/src/uploads/folder%s"%name) 
     return name
 #------------------
 
